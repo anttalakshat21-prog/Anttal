@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat Portfolio Hero</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f0f7ff; /* Light blue background */
+            min-height: 100vh;
+        }
+
+        /* Navbar Styling */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+        }
+
+        .logo {
+            color: #ff0000;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 8%;
+            gap: 40px;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .content h1 {
+            font-size: 3.5rem;
+            color: #333;
+            line-height: 1.2;
+        }
+
+        .content h1 span {
+            color: #ff0000;
+        }
+
+        .content p {
+            color: #666;
+            margin: 20px 0 40px;
+            line-height: 1.6;
+            max-width: 500px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        /* Button Styling */
+        .btn-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .btn-red {
+            background-color: #ff0000;
+            color: white;
+            border: 1px solid #ff0000;
+        }
+
+        .btn-outline {
+            border: 1px solid #ff0000;
+            color: #333;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Image Container */
+        .hero-img {
+            flex: 1;
+        
+        }
+
+        .hero-img img {
+            width: 100%;
+           
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .btn-container {
+                justify-content: center;
+            }
+            .hero-img {
+                justify-content: center;
+            }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8faff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container for spacing */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* --- About Me Section --- */
+        .about-section {
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Yellow underline under heading */
+        .about-section h2::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: #ffcc00;
+            margin: 8px auto 0;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-top: 50px;
+            text-align: left;
+        }
+
+        /* Image styling with rounded corners */
+        .about-img {
+            flex: 1;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .about-text {
+            flex: 1.2;
+        }
+
+        .about-text p {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        /* --- Skills Styling --- */
+        .skills-container h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* Pill-shaped skill tags */
+        .skill-tag {
+            background: #edf2f7;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #555;
+            transition: 0.3s;
+        }
+
+        .skill-tag:hover {
+            background: #e2e8f0;
+            cursor: pointer;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Portfolio</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="content">
+            <h1>Hello, I'm <span>Akshat</span></h1>
+            <p>Hello! I'm  Akshat. I am from Ambala City Haryana. I am passionate about learning new technologies and designing websites.</p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-red">View My Work</a>
+                <a href="#" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <!-- Replace the src with your actual image path -->
+            <img src="image01.webp" >
+        </div>
+    </div>
+     <section class="container about-section">
+        <h2>About Me</h2>
+`````````````````
+        <div class="about-content">
+            <!-- Left Side: Image -->
+            <div class="about-img">
+                <img src="image03.avif">
+            </div>
+
+            <!-- Right Side: Content -->
+            <div class="about-text">
+                <p>
+                    HELLO! I'm  Akshat Anttal. I am from Ambala City Haryana. I am passionate about learning 
+                    new technologies and designing websites. My goal is to become a successful web developer 
+                    in the future.
+                </p>
+
+                <div class="skills-container">
+                    <h3>Skills & Technologies</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JAVA SCRIPT</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Asp.net</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
